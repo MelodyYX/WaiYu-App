@@ -11,6 +11,11 @@ public class Word {
     private String mEngTranslation;
     private int mImageRes;
 
+    public Word(String chTranslation,String engTranslation){
+        mChTranslation = chTranslation;
+        mEngTranslation = engTranslation;
+    }
+
     public Word(String chTranslation,String engTranslation,int itemImageRes){
         mChTranslation = chTranslation;
         mEngTranslation = engTranslation;

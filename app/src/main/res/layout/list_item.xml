@@ -25,7 +25,7 @@
         <TextView
             android:id="@+id/ch_text"
             tools:text="Chinese"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -33,7 +33,7 @@
         <TextView
             android:id="@+id/eng_text"
             tools:text="English"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
