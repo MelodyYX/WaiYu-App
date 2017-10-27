@@ -11,7 +11,7 @@ public class PhrasesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_words_list);
+        setContentView(R.layout.words_list);
         ArrayList<Word> Trans = new ArrayList<Word>();
 
         Trans.add(new Word("你去哪儿？","Where are you going?"));
@@ -25,7 +25,7 @@ public class PhrasesActivity extends AppCompatActivity {
         Trans.add(new Word("走吧","Let’s go."));
         Trans.add(new Word("过来","Come here."));
 
-        WordAdapter adapter = new WordAdapter(this, Trans);
+        WordAdapter adapter = new WordAdapter(this,Trans,R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

@@ -11,7 +11,7 @@ public class ColorsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_words_list);
+        setContentView(R.layout.words_list);
 
         ArrayList<Word> Trans = new ArrayList<Word>();
 
@@ -28,7 +28,7 @@ public class ColorsActivity extends AppCompatActivity {
         Trans.add(new Word("土黄","dusty yellow",R.drawable.color_dusty_yellow));
         Trans.add(new Word("芥末黄","mustard yellow",R.drawable.color_mustard_yellow));
 
-        WordAdapter adapter = new WordAdapter(this, Trans);
+        WordAdapter adapter = new WordAdapter(this,Trans,R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

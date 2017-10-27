@@ -5,13 +5,11 @@ import android.os.Bundle;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-import static com.example.android.WaiYu.R.drawable.number_one;
-
 public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_words_list);
+        setContentView(R.layout.words_list);
 
         ArrayList<Word> Trans = new ArrayList<Word>();
 
@@ -26,10 +24,10 @@ public class NumbersActivity extends AppCompatActivity {
         Trans.add(new Word("9","Nine",R.drawable.number_nine));
         Trans.add(new Word("10","Ten",R.drawable.number_ten));
 
-        WordAdapter adapter = new WordAdapter(this, Trans);
+        WordAdapter adapter = new WordAdapter(this,Trans,R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
-
+        //listView.setBackgroundColor(Color.parseColor("#FFD54F"));
         listView.setAdapter(adapter);
     }
 }

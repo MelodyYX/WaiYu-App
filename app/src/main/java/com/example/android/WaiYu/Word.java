@@ -9,7 +9,8 @@ import android.media.Image;
 public class Word {
     private String mChTranslation;
     private String mEngTranslation;
-    private int mImageRes;
+    private static final int NO_IMAGE =-1;
+    private int mImageRes=NO_IMAGE;
 
     public Word(String chTranslation,String engTranslation){
         mChTranslation = chTranslation;
@@ -33,6 +34,10 @@ public class Word {
 
     public int getImageRes(){
         return mImageRes;
+    }
+
+    public boolean hasImage(){
+        return mImageRes!=NO_IMAGE;
     }
 
 }
